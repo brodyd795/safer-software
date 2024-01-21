@@ -9,7 +9,8 @@
     "git-complex": "node git/levenshtein.js",
     "lint": "eslint 'lint/*'",
     "ts-with": "npm run build && node type-safety/with.js",
-    "ts-without": "node type-safety/without.js"
+    "ts-without": "node type-safety/without.js",
+    "all": "npm run lint && npm run ts-with"
   },
   "author": "",
   "license": "ISC",
