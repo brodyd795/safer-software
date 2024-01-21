@@ -1,10 +1,18 @@
 /**
+ * Imagine you've been tasked with writing the Levenshtein algorithm for a class project.
+ * This could take you quite a while, with many, many iterations.
+ * 
+ * Using proper version control (e.g. git) for this would be much simpler and effective
+ * than without (e.g. file naming "algorithm_v2_FINAL").
+ */
+
+/**
  * Calculate the minimum number of single-character edits to change one string into another.
  * Useful for spell-checking algorithms.
  * 
  * Source: https://www.30secondsofcode.org/js/s/levenshtein-distance/
  */
-function levenshteinDistance(s, t) {
+function levenshteinDistance(s, t) { // example refactor: rename to "source" and "target"
     if (!s.length) return t.length;
     if (!t.length) return s.length;
     const arr = [];
