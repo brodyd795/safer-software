@@ -1,0 +1,16 @@
+{
+  "name": "safer-software",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "ts-with": "npm run build && node type-safety/with.js",
+    "ts-without": "node type-safety/without.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
