@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "lint-with": "eslint 'lint/*'",
+    "git": "node git/index.js",
+    "lint": "eslint 'lint/*'",
     "ts-with": "npm run build && node type-safety/with.js",
     "ts-without": "node type-safety/without.js"
   },
