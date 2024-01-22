@@ -19,20 +19,20 @@
             <h1>Hello World!</h1>
             <p id="myText">This is the main content</p>
             <button onclick="changeColor()">Click me to see a magic trick!</button>
-            <form onsubmit="alertSuccess()">
+            <form onsubmit="greetUser(this.name.value); return false">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" />
                 <input type="submit" value="Submit" />
             </form>
+            <p data-testid="name-output" id="name-output"></p>
         </main>
         <script>
             function changeColor(e) {
                 const element = document.getElementById('myText')
-                console.log(element)
                 element.style.color = 'green';
             }
-            function alertSuccess() {
-                alert("Nice job!")
+            function greetUser(val) {
+                document.getElementById('name-output').innerHTML = `Hello, ${val}!`;
             }
         </script>
     </body>
