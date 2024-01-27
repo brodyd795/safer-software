@@ -10,7 +10,7 @@
     "lint": "eslint 'lint/*'",
     "ts-with": "npm run build && node type-safety/with.js",
     "ts-without": "node type-safety/without.js",
-    "test-unit": "jest",
+    "test-unit": "jest testing/levenshtein.test.js",
     "test-e2e": "npx playwright test",
     "test-e2e-ui": "npx playwright test --ui",
     "test-e2e-report": "npx playwright show-report",
