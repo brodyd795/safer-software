@@ -25,3 +25,25 @@ test('example test', async ({ page }) => {
   await page.getByText('About').click();
   await page.waitForURL(`${baseUrl}/about.html`, {timeout: 1_000});
 });
+
+test('can scroll down the page', async ({page}) => {
+  await page.goto(`${baseUrl}/lorem.html`);
+
+  // Get the initial scroll position
+  const initialScrollPosition = await page.evaluate(() => window.scrollY);
+
+  // Scroll down the page
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+
+  // Wait for a brief moment to ensure the scrolling has taken place
+  await page.waitForTimeout(1000);
+
+  // Get the updated scroll position after scrolling
+  const updatedScrollPosition = await page.evaluate(() => window.scrollY);
+
+  // Assert that the scroll position has changed, indicating successful scrolling
+  expect(initialScrollPosition).toBe(updatedScrollPosition)
+  expect(updatedScrollPosition).toBeGreaterThan(0)
+})
