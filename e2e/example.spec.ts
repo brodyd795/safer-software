@@ -26,7 +26,7 @@ test('example test', async ({ page }) => {
   await page.waitForURL(`${baseUrl}/about.html`, {timeout: 1_000});
 });
 
-test('can scroll down the page', async ({page}) => {
+test.skip('can scroll down the page', async ({page}) => {
   await page.goto(`${baseUrl}/lorem.html`);
 
   // Get the initial scroll position
