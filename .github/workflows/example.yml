@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    # steps below only to be used for example purposes
     # - run: npm run build
     # - run: npm run lint
     - run: npm run test-unit
