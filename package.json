@@ -13,8 +13,7 @@
     "test-unit": "jest testing/levenshtein.test.js",
     "test-e2e": "npx playwright test",
     "test-e2e-ui": "npx playwright test --ui",
-    "test-e2e-report": "npx playwright show-report",
-    "all": "npm run lint && npm run ts-with"
+    "test-e2e-report": "npx playwright show-report"
   },
   "author": "",
   "license": "ISC",

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const baseUrl = 'file:///Users/brodydingel/Developer/personal/safer-software/testing';
+const baseUrl = 'file:///Users/brodydingel/Developer/personal/safer-software/e2e';
 const green = 'rgb(0, 128, 0)';
 
 test('example test', async ({ page }) => {
