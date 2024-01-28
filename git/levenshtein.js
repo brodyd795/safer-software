@@ -32,8 +32,8 @@ function levenshteinDistance(s, t) { // example refactor: rename to "source" and
     return arr[t.length][s.length];
   } 
 
-levenshteinDistance('duck', 'dark'); // 2
-levenshteinDistance('foo', 'foobar'); // 3
+console.log('duck vs dark: 2 -->', levenshteinDistance('duck', 'dark')); // 2
+console.log('foo vs foobar: 3 --> ', levenshteinDistance('foo', 'foobar')); // 3
 
 module.exports = {
   levenshteinDistance: levenshteinDistance,

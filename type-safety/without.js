@@ -17,6 +17,8 @@ const texts = [text1, text2, text3];
  * - all unique words among all the texts
  * - every position at which a unique word occurs
  */
+
+// Task: run this code and see the bug. Then see the `with.ts` file.
 const uniqueWords = [];
 const positions = [];
 
